@@ -1,0 +1,21 @@
+.About{
+  margin-top: var(--h2)!important;
+  display: grid;
+  grid-template-columns: 33% auto auto;
+  gap: var(--h4);
+}
+.AboutCopy p, .AboutCopy p br{
+  margin-bottom: var(--h6) !important;
+}
+.Loop{
+  display: none;
+  max-height: 100%;
+}
+.Loop img{
+  max-width: 100%;
+}
+@media (max-width: 575.98px) {
+  .About{
+    grid-template-columns: 100%;
+  }
+}

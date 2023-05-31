@@ -1,0 +1,13 @@
+.VideoBg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  overflow: hidden;
+}
+.VideoTag{
+  min-width: 100vw;
+}

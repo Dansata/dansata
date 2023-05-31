@@ -1,0 +1,22 @@
+.CardPicture{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: auto;
+  padding: 0;
+  justify-items:center;
+}
+.CardPicture img{
+  min-width: 100%;
+  min-height: 100%;
+  transition: all ease-in-out 1s;
+}
+.CardPicture:hover img{
+  transform: scale(1.05);
+}
+
+.CardDetail {
+  color: var(--rosewood);
+  font-style: italic;
+}

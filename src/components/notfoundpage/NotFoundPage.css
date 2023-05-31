@@ -1,0 +1,33 @@
+.NotFoundPage{
+  margin-top: var(--h2)!important;
+  display: grid;
+  grid-template-columns: 33% auto auto;
+  gap: var(--h4);
+}
+.NotFoundPageCopy p, .NotFoundPageCopy p br{
+  margin-bottom: var(--h6) !important;
+}
+.Devil{
+  position: absolute;
+  top:0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  pointer-events: none;
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+  justify-items: center;
+  z-index: -2;
+}
+.Devil img{
+  min-width: 100%;
+  min-height: 100%;
+}
+@media (max-width: 575.98px) {
+  .NotFoundPage{
+    min-height: 100% !important;
+    grid-template-columns: auto;
+  }
+}

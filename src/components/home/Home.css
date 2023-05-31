@@ -1,0 +1,5 @@
+.HomePage{
+  margin-top: var(--h3)!important;
+  display: flex !important;
+  flex-direction: column;
+}

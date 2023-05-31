@@ -1,0 +1,26 @@
+.Navigation{
+  display: flex;
+  justify-content: space-between;
+  color: var(--light) !important;
+  z-index: 5;
+}
+
+li {
+  list-style-type: none;
+}
+ul{
+  display: flex;
+  padding: 0;
+  gap: var(--h3);
+}
+
+.nav-link{
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+@media (max-width: 575.98px) {
+  ul {
+    align-items: center;
+    gap: var(--h6);
+  }
+}
