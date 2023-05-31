@@ -1,13 +1,107 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+:root {
+  --rosewood :#D87B8E;
+  --midnight: #242430;
+  --light: rgba(255, 255, 255, 0.75);
+  --dark: rgba(0, 0, 0, 0.75);
+  --h1: 17.085em;
+  --h2: 7.8em;
+  --h3: 3.375em;
+  --h4: 2.25em;
+  --h6: 1em;
+  --small: 0.667em;
+}
+*{
+  margin: 0 !important;
+  font-family: Poppins;
+}
+*::selection {
+    color: var(--light);
+    background-color: var(--rosewood);
+}
+*::-webkit-scrollbar {
+  display: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+body {
+  color: var(--light);
+  background: var(--midnight);
+  margin: 0;
+  height: 100vh;
+}
+.Container{
+  box-sizing: border-box;
+  min-height: 100vh !important;
+  padding: 5.063em;
+  display: flex;
+  flex-direction: column;
+}
+br::after{
+  height: var(--h6)!important;
+}
+.Rosewood{
+  color: var(--rosewood);
+  font-family: Poppins-Italic;
+}
+button{
+  padding: 0;
+}
+p{
+  font-size: var(--h6);
+  letter-spacing: 0.13em;
+}
+h1, h2, h3 {
+  font-family: "MPIGothicExtraCondensed";
+  font-weight: normal;
+}
+h1{
+  color: var(--rosewood);
+  font-kerning: normal;
+  letter-spacing: -0.02em;
+  font-size: var(--h1);
+  line-height: 0.75em;
+}
+h3 {
+  font-size: var(--h3);
+  line-height: var(--h6);
+  padding-top: 0.3em;
+}
+a, button{
+  background: none;
+  text-decoration:none !important;
+  color: inherit;
+  transition: all ease-in-out 0.3s;
+  pointer-events:visible;
+  border: none;
+}
+a:hover, button:hover{
+  color: var(--rosewood);
+}
+a:active, .active{
+  color: var(--rosewood);
+}
+.Footer{
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 5.063em!important;
+}
+
+@media (max-width: 1600px) {
+  .Container{
+    padding: 2em;
+    justify-content: space-between;
+  }
+  .Footer{
+    position: relative;
+    margin-bottom: 0 !important;
+  }
+  h1{
+    font-size: 7.95em;
+    line-height: 0.75em;
+  }
 }
