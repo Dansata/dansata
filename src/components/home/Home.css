@@ -3,3 +3,9 @@
   display: flex !important;
   flex-direction: column;
 }
+.button-home{
+  border: 1px solid var(--rosewood);
+  text-transform: uppercase;
+  padding: 1em;
+  margin-top: 2em;
+}

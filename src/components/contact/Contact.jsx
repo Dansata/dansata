@@ -29,8 +29,8 @@ function Contact() {
           <a href="https://dribbble.com/dansata" target="_blank">
             <img src="/assets/Dribbble.svg" type="svg" alt="Dribbble"/>
           </a>
-          <a href="https://open.spotify.com/user/12178267666?si=9de9396593ac4e57" target="_blank">
-            <img src="/assets/Spotify.svg" type="svg" alt="Spotify"/>
+          <a href="https://github.com/Dansata/dansata" target="_blank">
+            <img src="/assets/Github.svg" type="svg" alt="Github"/>
           </a>
           
 
