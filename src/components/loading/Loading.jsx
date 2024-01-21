@@ -1,17 +1,24 @@
-
+// Loading.jsx
 import React from 'react';
-import { useLottie } from "lottie-react";
-import loaderAnimation from "./Loader.json"; // Replace with the path to your loader.json file
+import { useLottie } from 'lottie-react';
+import loaderAnimation from './Loader.json';
+import './Loading.css';
 
 const Loading = () => {
   const options = {
     animationData: loaderAnimation,
-    loop: true
+    loop: true,
   };
 
   const { View } = useLottie(options);
 
-  return <>{View}</>;
+  return (
+    <div className='iconLoading'>
+      <div className='iconLoadingContainer'>
+        {View}
+      </div>
+    </div>
+  );
 };
 
 export default Loading;

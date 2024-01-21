@@ -1,0 +1,13 @@
+.iconLoading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height as needed */
+    background: var(--midnight); /* Background color */
+  }
+  
+  .iconLoadingContainer {
+    width: 300px; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+  }
+  
