@@ -3,6 +3,8 @@ export { default as Cursor } from "./cursor/Cursor";
 export { default as Navigation } from "./navigation/Navigation";
 export { default as Footer } from "./footer/Footer";
 export { default as Home } from "./home/Home";
+export { default as Loading } from "./loading/Loading";
+export { default as LoaderView } from "./loading/LoaderView";
 export { default as About } from "./about/About";
 export { default as Portfolio } from "./portfolio/Work";
 export { default as Contact } from "./contact/Contact";
