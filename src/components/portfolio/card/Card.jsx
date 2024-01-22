@@ -1,9 +1,11 @@
 import React from "react";
 import './Card.css';
+import useScrollReveal from '../../../hooks/useScrollReveal';
 
 function Card(props) {
+  useScrollReveal('.reveal');
   return (
-    <div key={props.id}className="Card grid-item">
+    <div key={props.id}className="Card grid-item reveal" >
       <a href={props.link} className="CardBody" target="_blank">
         <div className="CardPicture">
           <img src={props.image}/>
