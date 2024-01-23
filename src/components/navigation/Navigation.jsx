@@ -24,6 +24,11 @@ function Navigation() {
           </NavLink>
         </li>
         <li className="nav-item">
+          <a href="https://dansata.com/blog" className="nav-link" target="_blank" rel="noopener noreferrer">
+            Blog
+          </a>
+        </li>
+        <li className="nav-item">
           <NavLink className="nav-link" to="/contact">
             Contact
           </NavLink>
