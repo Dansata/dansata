@@ -15,6 +15,7 @@ function CoverLetter() {
 
     // Get the value of the 'name' parameter from the URL
     const name = params.get('name') || 'Guest';
+    const workplace = params.get('workplace') || 'Your company';
 
     return (
         <div className="CoverLetter">
@@ -29,7 +30,7 @@ function CoverLetter() {
                     </h1>
                     <br />
                     <p className="reveal">
-                        Ready to meet your next Graphic Designer/Production Artist who's been on a design adventure for over a decade? From web to digital and user interface design, I've explored it all. While my recent journey revolves around digital design, my roots in Technical Pre-press and Graphic Design, along with stints in advertising and marketing agencies, make me your go-to guy for not just quality but confidence and efficiency in every design I whip up. Let's dive into the layers of creativity! 🚀
+                        Ready to meet the next Graphic Designer/Production Artist for <span className="Rosewood">{workplace}</span>? From web to digital and user interface design, I've explored it all. While my recent journey revolves around digital design, my roots in Technical Pre-press and Graphic Design, along with stints in advertising and marketing agencies, make me your go-to guy for not just quality but confidence and efficiency in every design I whip up. Let's dive into the layers of creativity! 🚀
 
                     </p>
                 </div>
@@ -37,27 +38,27 @@ function CoverLetter() {
             <div className="Highlights">
                 <div className="reveal Highlight">
                     <div className="Icon">
-                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M44.9507 25C34.9191 27.0155 27.0155 34.9191 25 44.9507C22.9845 34.9191 15.0809 27.0155 5.0493 25C15.0809 22.9845 22.9845 15.0809 25 5.0493C27.0155 15.0809 34.9191 22.9845 44.9507 25Z" stroke="#D87B8E" />
                         </svg>
 
                     </div>
                     <p>
-                        <b>Strengths</b>
+                        <b className="Rosewood">Strengths</b>
                         <br />
                         I bring over a decade of experience as a Graphic and Web Designer with a knack for crafting visually stunning designs. My work spans various creative disciplines, including web design, digital design, and user interface design. A key aspect of my design philosophy is to not only meet but exceed expectations, a trait that has consistently earned recognition throughout my career.
-                        
+
                     </p>
                 </div>
                 <div className="reveal Highlight">
                     <div className="Icon">
-                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M44.9507 25C34.9191 27.0155 27.0155 34.9191 25 44.9507C22.9845 34.9191 15.0809 27.0155 5.0493 25C15.0809 22.9845 22.9845 15.0809 25 5.0493C27.0155 15.0809 34.9191 22.9845 44.9507 25Z" stroke="#D87B8E" />
                         </svg>
 
                     </div>
                     <p>
-                        <b>In My Toolbox</b>
+                        <b className="Rosewood">In My Toolbox</b>
                         <br />
                         My multifaceted skill set includes expertise in Graphic Design, Web Design, UI Design, Design Systems, Prototyping, HTML Mailing, Brand Identity, Illustration, Print Design, and more. I am well-versed in a range of tools and platforms, from industry-standard software like Adobe CC to collaborative tools such as Figma, Zeplin, and Axure. My proficiency extends to coding languages such as HTML/CSS and JavaScript (React), as well as version control systems like GIT.
                     </p>
@@ -70,7 +71,7 @@ function CoverLetter() {
 
                     </div>
                     <p>
-                        <b>What I'm Working On</b>
+                        <b className="Rosewood">What I'm Working On</b>
                         <br />
                         Currently, I'm focused on refining my skills in UI design, exploring the intricate details of layout design, and diving into the world of Design Systems. I am committed to staying on the cutting edge of design trends and technologies, ensuring that my work remains fresh, innovative, and in line with the latest industry standards.
                     </p>
@@ -81,11 +82,11 @@ function CoverLetter() {
                 <div><h3 className="reveal Rosewood">Why me?</h3></div>
                 <div>
                     <p className="reveal">
-                    This diverse skill set enables me to approach projects holistically, ensuring not only aesthetic appeal but also functionality and user engagement. Feel free to explore my online portfolio for a closer look at how this toolkit has translated into tangible, impactful design projects.
-                    <br />
-<NavLink className="button-home reveal" to="/Portfolio">
-            See my online portfolio →
-      </NavLink>
+                        If you appreciate meticulous attention to detail and have a penchant for pixel perfection, don't hesitate to delve into some of the projects I've worked on. My diverse skill set allows me to approach projects holistically, ensuring they not only possess aesthetic appeal but also boast functionality and user engagement. Feel free to explore my online portfolio for an in-depth look at how this toolkit has translated into tangible and impactful design projects.
+                        <br />
+                        <NavLink className="button-home reveal" to="/Portfolio">
+                            See my online portfolio →
+                        </NavLink>
 
                     </p>
                 </div>

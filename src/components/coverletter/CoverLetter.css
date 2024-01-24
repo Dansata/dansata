@@ -4,6 +4,9 @@
 .CoverLetter p {
     font-size: var(--p);
 }
+.CoverLetter b {
+    font-size: var(--h6);
+}
 
 .CoverLetter ul {
     list-style-type: none;
@@ -45,6 +48,10 @@
 .Why {
     margin: var(--h2) auto !important;
     
+}
+.Why .button-home {
+    display: inline-block;
+    margin-top: var(--h6) !important;
 }
 .Cta{
     margin: var(--h2) !important;
