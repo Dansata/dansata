@@ -2,9 +2,8 @@
   width: 100vw;
   height: 100vh;
   position: fixed;
-  background-color: red;
-  background-image: url("../../../public/assets/noise.gif");
-  opacity: 0.02;
+  background-image:url("../../../public/assets/noise.gif");
+  opacity: 0.02; /* Adjust opacity for the noise effect */
   pointer-events: none;
   z-index: 999999;
 }

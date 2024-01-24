@@ -1,0 +1,70 @@
+.Jobs {
+    position: relative; /* Establish a new stacking context */    
+    max-width: 100% !important;
+    overflow: hidden;
+  }
+  
+  
+  .JobsContainer {
+    display: flex;
+    gap: var(--h4);
+    white-space: nowrap; /* Prevent wrapping to the next line */
+    overflow-x: auto;    /* Enable horizontal scrolling */
+    -ms-overflow-style: none;  /* Hide scrollbar in Internet Explorer and Edge */
+    scrollbar-width: none;  /* Hide scrollbar in Firefox */
+
+    &::-webkit-scrollbar {
+        display: none;  /* Hide scrollbar in Webkit browsers */
+    }
+}
+.JobsContainer:hover{
+    overflow:auto;
+}
+  
+  .JobCard {
+    overflow-y: hidden; /* Hide vertical overflow */
+    flex: 0 0 30%;
+    min-width: 0;
+    border-radius: var(--h6);
+    margin:var(--h6) 0 !important;
+    padding: var(--h6);
+    overflow: hidden;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 0px 17px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 17px 5px rgba(0, 0, 0, 0);
+    transition: all 250ms ease-in;
+    
+  }
+  .JobCard:hover{
+    -webkit-box-shadow: 0px 0px 17px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 17px 5px rgba(0, 0, 0, 0.1);
+    margin: var(--h6) var(--h6) 0 0 !important;
+    
+  }
+  .Pills{ 
+    margin-top: var(--p) !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--h6);
+}
+.Pill{
+    background-color: var(--light);
+    color: var(--midnight);
+    font-size: var(--small);
+    font-weight: bold;
+    padding: calc(var(--p) / 2) calc(var(--h6));
+    border-radius: var(--h6);
+}
+@media (max-width: 575.98px) {
+    .JobsContainer{
+        gap: var(--small);
+    }
+    .JobCard{
+        flex: 0 0 90%;
+        padding: 0;
+    }
+    .Pills{
+        gap: var(--small);
+    }
+}

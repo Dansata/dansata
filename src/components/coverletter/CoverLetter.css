@@ -1,0 +1,122 @@
+.CoverLetter{
+    max-width: 100% !important;
+}
+.CoverLetter p {
+    font-size: var(--p);
+}
+
+.CoverLetter ul {
+    list-style-type: none;
+}
+
+.CoverLetter li::before {
+    content: '\2022';
+    color: var(--rosewood);
+    font-size: var(--h5);
+    margin-right: var(--h5);
+}
+
+.Letter,
+.Why {
+    margin-top: var(--h2) !important;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--h4);
+}
+
+.Highlights {
+    margin-top: var(--h2) !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--h4);
+}
+
+.Highlight {
+    flex-basis: calc(33.33% - var(--h4));
+    flex-grow: 1;
+    min-width: 0;
+}
+
+.Icon {
+    margin-bottom: var(--h4) !important;
+}
+
+.Why {
+    margin: var(--h2) auto !important;
+    
+}
+.Cta{
+    margin: var(--h2) !important;
+    margin-bottom: var(--h4) !important;
+    text-align: center;
+}
+.CoverLetter .ContactCol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: var(--h4) !important;
+}
+
+
+
+@media (max-width: 575.98px) {
+
+    .Letter,
+    .Why {
+        grid-template-columns: 100%;
+    }
+
+    .Highlight {
+        flex-basis: 100%;
+    }
+    .Cta{
+        margin: var(--p) 0 !important;
+    }
+}
+
+/*Animations*/
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(270deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Apply the animation to the SVG element */
+.Icon svg {
+    animation: rotateAnimation 8s ease infinite;
+}
+@keyframes eyesAnimation {
+    0% {
+      transform: translateX(0); /* Start off the screen on the right */
+    }
+    25% {
+      transform: translateX(0); /* Move off the screen on the left */
+    }
+    50% {
+        transform: translateX(-15px); /* Move off the screen on the left */
+      }
+    100% {
+        transform: translateX(0); /* Start off the screen on the right */
+      }
+  }
+  
+  .eyes {
+    animation: eyesAnimation 2s ease-in infinite; /* Adjust the duration based on your preference */
+  }

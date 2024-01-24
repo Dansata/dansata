@@ -14,8 +14,9 @@ import {
   Portfolio,
   Contact,
   NotFoundPage,
+  CoverLetter,
   Loading,
-  LoaderView, // Asegúrate de tener esta importación
+  LoaderView,
 } from './components';
 
 const rootElement = document.getElementById("root");
@@ -56,6 +57,7 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/coverletter" element={<CoverLetter />} />
             <Route path="/loader" element={<LoaderView />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>

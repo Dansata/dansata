@@ -9,3 +9,4 @@ export { default as About } from "./about/About";
 export { default as Portfolio } from "./portfolio/Work";
 export { default as Contact } from "./contact/Contact";
 export { default as NotFoundPage } from "./notfoundpage/NotFoundPage";
+export { default as CoverLetter } from "./coverletter/CoverLetter";
