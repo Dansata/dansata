@@ -1,13 +1,13 @@
 const worksDB = [
-  /*{
+  {
     id: "01",
-    title: "Walgreens health corner app",
+    title: "MyWalgreens",
     image: "/assets/works/Walgreens.jpg",
     year: "2022",
     company: "Epam Systems",
-    link: "https://www.google.com"
+    link: "https://www.figma.com/proto/gNUgpyx5wPQtTMOr4APN1B/Daniel-Alvarez-Portfolio?page-id=1592%3A20889&type=design&node-id=3199-2980&viewport=-1326%2C-175%2C0.19&t=LiYJn5rP5mnaS07s-8&scaling=min-zoom&starting-point-node-id=1592%3A20890&hide-ui=1"
   },
-  */
+  
   {
     id: "02",
     title: "Descubre Compensar",

@@ -7,10 +7,17 @@
             "keyword",
             "storage.modifier",
             "storage.type.class.js",
-            "storage.type.js"
+            "storage.type.js",
+            "comment",
+                    "constant",
+                    "emphasis",
+                    "entity",
+                    "invalid",
+                    "keyword",
+                    "markup",
           ],
           "settings": {
-            "fontStyle": "italic bold"
+            "fontStyle": "italic"
           }
         },
         {
@@ -24,6 +31,6 @@
         }
       ]
     },
-    "editor.fontFamily": "Fira Code",
+    "editor.fontFamily": "'Cascadia Code', Consolas, 'Courier New', monospace"",
     "editor.fontLigatures": true,
   }
